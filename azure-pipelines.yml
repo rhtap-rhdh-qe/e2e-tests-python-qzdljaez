@@ -25,7 +25,7 @@ jobs:
   - job: Build_Workload
     displayName: "TSSC Build and Scan"
     container:
-      image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+      image: quay.io/redhat-user-workloads/rhtap-shared-team-tenant/rhtap-task-runner@sha256:e7fd865ce3ed50c59e3bb11e2e03fa6ee1cff6dea3329db4909cfc198f180871
       options: --privileged
     steps:
       - checkout: self
